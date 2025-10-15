@@ -1,14 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const CallToAction = () => {
+  const { ref, isVisible } = useScrollAnimation(0.2);
   const whatsappNumber = "5511999999999"; // Replace with actual number
   const whatsappMessage = encodeURIComponent("Olá! Gostaria de agendar uma consulta.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
     <section className="section-padding gradient-soft">
-      <div className="container-custom text-center animate-fade-in">
+      <div 
+        ref={ref as React.RefObject<HTMLDivElement>}
+        className={`container-custom text-center transition-all duration-1000 ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
+      >
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
             Pronta Para Te Acolher

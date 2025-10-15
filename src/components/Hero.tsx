@@ -17,8 +17,11 @@ const Hero = () => {
         <h1 className="text-5xl md:text-7xl font-serif font-bold text-primary mb-6 leading-tight">
           Larissa Azevedo Pedraça
         </h1>
-        <p className="text-2xl md:text-3xl text-muted-foreground mb-4 font-light">
+        <p className="text-2xl md:text-3xl text-muted-foreground mb-2 font-light">
           Psicóloga
+        </p>
+        <p className="text-lg text-muted-foreground/70 mb-8 font-light">
+          CRP 24/05599
         </p>
         <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-10 leading-relaxed">
           Um espaço acolhedor para cuidar da sua saúde mental e emocional. 
