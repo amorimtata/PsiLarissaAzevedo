@@ -1,5 +1,5 @@
-import larissaPortrait from "@/assets/larissa-portrait.png";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import { AboutCarousel } from "./AboutCarousel";
 
 const About = () => {
   const { ref: textRef, isVisible: textVisible } = useScrollAnimation(0.2);
@@ -44,16 +44,7 @@ const About = () => {
               imageVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
             }`}
           >
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary/10 rounded-3xl transform rotate-3"></div>
-              <div className="relative shadow-medium rounded-3xl overflow-hidden border-4 border-white">
-                <img 
-                  src={larissaPortrait} 
-                  alt="Psicóloga Larissa Azevedo Pedraça"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            </div>
+            <AboutCarousel />
           </div>
         </div>
       </div>
