@@ -73,7 +73,7 @@ export const AboutCarousel = () => {
     if (!emblaApi) return;
     const interval = setInterval(() => {
       emblaApi.scrollNext();
-    }, 2000); // Carregamento das imagens a cada 2 segundos -> 2000 milesegundos
+    }, 5000); // Carregamento das imagens a cada 2 segundos -> 2000 milesegundos
 
     return () => clearInterval(interval);
   }, [emblaApi]);
