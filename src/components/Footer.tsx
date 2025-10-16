@@ -1,11 +1,12 @@
-import { Instagram, Mail, Phone, MessageCircle, Facebook, Linkedin } from "lucide-react";
+import { Instagram, Mail, Phone, MessageCircle, Linkedin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-primary text-primary-foreground py-12">
-      <div className="container-custom">
+      {/* AQUI A MUDANÇA: Adicionado px-4 para espaçamento lateral */}
+      <div className="container-custom px-8">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-serif font-bold mb-4">
@@ -20,11 +21,11 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contato</h4>
             <div className="space-y-3">
               <a 
-                href="tel:+5511999999999" 
+                href="tel:+5569999682668" // Corrigi o número para o que está no texto
                 className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
               >
                 <Phone className="h-4 w-4" />
-                (11) 99999-9999
+                (69) 99968-2668
               </a>
               <a 
                 href="mailto:contato@larissaapedraca.com.br" 
@@ -40,7 +41,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Redes Sociais</h4>
             <div className="flex gap-4">
               <a 
-                href="https://wa.me/5511999999999" 
+                href="https://wa.me/5569999682668" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-smooth"
@@ -49,7 +50,7 @@ const Footer = () => {
                 <MessageCircle className="h-5 w-5" />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/psicologa.larissazevedo/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-smooth"
@@ -58,16 +59,7 @@ const Footer = () => {
                 <Instagram className="h-5 w-5" />
               </a>
               <a 
-                href="https://facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-smooth"
-                aria-label="Facebook"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/larissazevveddo/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-primary-foreground/10 hover:bg-primary-foreground/20 transition-smooth"

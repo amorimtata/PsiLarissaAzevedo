@@ -1,29 +1,44 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle } from "lucide-react";
+import lariPhoto from '../assets/lari-photo.jpeg';
 
 const Hero = () => {
-  const whatsappNumber = "5511999999999"; // Replace with actual number
+  const whatsappNumber = "5569999682668"; // Replace with actual number
   const whatsappMessage = encodeURIComponent("Olá! Gostaria de agendar uma consulta.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center gradient-soft overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
-      </div>
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
       
+      {/* CAMADA DA IMAGEM DE FUNDO */}
+      <div 
+        className="absolute inset-0 bg-cover bg-top filter blur-sm scale-105"
+        style={{ backgroundImage: `url(${lariPhoto})` }}
+      />
+      
+      {/* CAMADA DE COR (OVERLAY) */}
+      <div className="absolute inset-0 bg-black/40 dark:bg-black/50" />
+
+      {/* CONTEÚDO */}
       <div className="container-custom relative z-10 text-center animate-fade-in">
-        <h1 className="text-5xl md:text-7xl font-serif font-bold text-primary mb-6 leading-tight">
+        <h1 
+          className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight"
+          style={{ textShadow: '0 2px 8px rgba(0, 0, 0, 0.7)' }}
+        >
           Larissa Azevedo Pedraça
         </h1>
-        <p className="text-2xl md:text-3xl text-muted-foreground mb-2 font-light">
-          Psicóloga
-        </p>
-        <p className="text-lg text-muted-foreground/70 mb-8 font-light">
-          CRP 24/05599
-        </p>
-        <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-10 leading-relaxed">
+        <div 
+          className="flex items-center justify-center gap-x-4 mb-8 text-2xl text-gray-100 font-light"
+          style={{ textShadow: '0 2px 6px rgba(0, 0, 0, 0.7)' }}
+        >
+          <span>Psicóloga</span>
+          <span className="text-gray-400 font-light">|</span>
+          <span>CRP 24/05599</span>
+        </div>
+        <p 
+          className="text-lg md:text-xl text-white max-w-2xl mx-auto mb-10 leading-relaxed"
+          style={{ textShadow: '0 2px 6px rgba(0, 0, 0, 0.7)' }}
+        >
           Um espaço acolhedor para cuidar da sua saúde mental e emocional. 
           Atendimento humanizado com empatia, escuta e profissionalismo.
         </p>

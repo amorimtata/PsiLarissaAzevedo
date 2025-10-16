@@ -6,49 +6,59 @@ const About = () => {
   const { ref: imageRef, isVisible: imageVisible } = useScrollAnimation(0.2);
 
   return (
-    <section id="about" className="section-padding bg-background">
-      <div className="container-custom">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div 
-            ref={textRef as React.RefObject<HTMLDivElement>}
-            className={`order-2 md:order-1 transition-all duration-1000 ${
-              textVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
-          >
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
-              Quem Sou
-            </h2>
-            <div className="space-y-4 text-foreground/80 leading-relaxed">
-              <p className="text-lg">
-                Sou Larissa Azevedo Pedraça, psicóloga dedicada a oferecer um atendimento 
-                acolhedor e humanizado. Minha missão é proporcionar um espaço seguro onde 
-                você possa se expressar livremente, compreender suas emoções e desenvolver 
-                ferramentas para viver com mais equilíbrio e bem-estar.
-              </p>
-              <p className="text-lg">
-                Acredito que cada pessoa possui um potencial único de transformação e 
-                crescimento. Meu trabalho é caminhar ao seu lado nessa jornada de 
-                autoconhecimento, respeitando seu tempo e suas necessidades individuais.
-              </p>
-              <p className="text-lg">
-                Com uma abordagem empática e baseada em evidências científicas, busco 
-                promover mudanças significativas e duradouras na vida dos meus pacientes, 
-                sempre com acolhimento, respeito e profissionalismo.
-              </p>
+    <>
+      <section id="about" className="section-padding bg-background">
+        <div className="container-custom px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+
+            {/* --- BLOCO DO TEXTO (CORRIGIDO) --- */}
+            <div
+              ref={textRef as React.RefObject<HTMLDivElement>}
+              className={`transition-all duration-1000 ${
+                // A CORREÇÃO ESTÁ AQUI
+                textVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              }`}
+            >
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8 text-left">
+                Quem Sou
+              </h2>
+
+              <div className="space-y-5 text-foreground/80 leading-relaxed text-left">
+                <p className="text-base md:text-lg">
+                  Sou <strong>Larissa Azevedo</strong>, psicóloga formada pelo 
+                  <strong> Centro Universitário São Lucas</strong>, com especialização em andamento em 
+                  <strong> Psicodiagnóstico e Avaliação Psicológica</strong> pela 
+                  <strong> Faculdade Famart</strong>.
+                </p>
+                <p className="text-base md:text-lg">
+                  Sou apaixonada por compreender pessoas e ajudá-las 
+                  a construir uma vida mais leve e equilibrada.
+                </p>
+                <p className="text-base md:text-lg">
+                  Atuo com base na <strong>Terapia Cognitivo-Comportamental (TCC)</strong>, uma abordagem que busca entender 
+                  como pensamentos, emoções e comportamentos se relacionam, promovendo mudanças reais e sustentáveis no dia a dia.
+                </p>
+                <p className="text-base md:text-lg">
+                  Acredito que a psicologia deve unir técnica e sensibilidade, aplicando métodos científicos sem perder a conexão 
+                  genuína com quem está do outro lado.
+                </p>
+              </div>
             </div>
-          </div>
-          
-          <div 
-            ref={imageRef as React.RefObject<HTMLDivElement>}
-            className={`order-1 md:order-2 flex justify-center transition-all duration-1200 delay-200 ${
-              imageVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
-          >
-            <AboutCarousel />
+
+            {/* --- BLOCO DO CARROSSEL --- */}
+            <div
+              ref={imageRef as React.RefObject<HTMLDivElement>}
+              className={`flex justify-center transition-all duration-1200 delay-200 ${
+                imageVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              }`}
+            >
+              <AboutCarousel />
+            </div>
+
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

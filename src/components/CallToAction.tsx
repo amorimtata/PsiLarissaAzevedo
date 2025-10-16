@@ -4,7 +4,7 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
 const CallToAction = () => {
   const { ref, isVisible } = useScrollAnimation(0.2);
-  const whatsappNumber = "5511999999999"; // Replace with actual number
+  const whatsappNumber = "5569999682668"; // Replace with actual number
   const whatsappMessage = encodeURIComponent("Olá! Gostaria de agendar uma consulta.");
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
@@ -18,11 +18,11 @@ const CallToAction = () => {
       >
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
-            Pronta Para Te Acolher
+            Pronta Para Te Atender!
           </h2>
           <p className="text-lg md:text-xl text-foreground/80 mb-10 leading-relaxed">
             Dê o primeiro passo em direção ao seu bem-estar emocional. 
-            Entre em contato e vamos juntas construir um caminho de cuidado e transformação.
+            Entre em contato e vamos juntos construir um caminho de cuidado e transformação.
           </p>
           
           <Button 

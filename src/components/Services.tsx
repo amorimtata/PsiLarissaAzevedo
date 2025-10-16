@@ -2,28 +2,30 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Users, Brain, Sparkles } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 
+// ARRAY ATUALIZADO COM AS NOVAS INFORMAÇÕES
 const services = [
-  {
-    icon: Heart,
-    title: "Terapia Individual",
-    description: "Atendimento personalizado focado em suas necessidades específicas e objetivos terapêuticos.",
-  },
-  {
-    icon: Users,
-    title: "Terapia de Casal",
-    description: "Fortalecimento de vínculos e comunicação para relações mais saudáveis e harmoniosas.",
-  },
   {
     icon: Brain,
     title: "Ansiedade e Depressão",
-    description: "Tratamento especializado para transtornos de ansiedade, depressão e questões emocionais.",
+    description: "Atendimento voltado para o manejo da ansiedade, crises, depressão e esgotamento emocional, utilizando a Terapia Cognitivo-Comportamental (TCC).",
+  },
+  {
+    icon: Users,
+    title: "Relacionamentos e Convivência",
+    description: "Apoio em dificuldades nos relacionamentos familiares, afetivos ou sociais, promovendo autoconhecimento e comunicação saudável.",
+  },
+  {
+    icon: Heart,
+    title: "Autoestima e Luto",
+    description: "Acolhimento para questões de autoconfiança, autoestima, luto e perdas, buscando fortalecer recursos internos e equilíbrio emocional.",
   },
   {
     icon: Sparkles,
-    title: "Autoconhecimento",
-    description: "Processo de desenvolvimento pessoal e descoberta de potencialidades e propósitos de vida.",
+    title: "Autoconhecimento e Desenvolvimento Pessoal",
+    description: "Espaço para compreender emoções, comportamentos e promover crescimento pessoal, com base na reflexão e construção de novos caminhos.",
   },
 ];
+
 
 const ServiceCard = ({ service, index }: { service: typeof services[0]; index: number }) => {
   const { ref, isVisible } = useScrollAnimation(0.1);

@@ -1,19 +1,33 @@
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import larissaPortrait from "@/assets/larissa-portrait.png";
+import pho2 from "@/assets/pho2.jpeg";
+import pho4 from "@/assets/pho4.jpeg";
+import pho5 from "@/assets/pho5.jpeg";
+import lariPhoto from "@/assets/lari-photo.jpeg";  
+
+
+
+// Array carrossel images
 
 // Add more images here as needed
 const images = [
   {
-    src: larissaPortrait,
-    alt: "Psicóloga Larissa Azevedo Pedraça - CRP 24/05599",
+    src: pho2,
+    alt: "Imagem 2",
   },
-  // Add more images in the same format:
-  // {
-  //   src: anotherImage,
-  //   alt: "Description",
-  // },
+  {
+    src: pho4,
+    alt: "Imagem 4",
+  },
+  {
+    src: pho5,
+    alt: "Imagem 5",
+  },
+  {
+    src: lariPhoto,
+    alt: "Imagem 6",  
+  }
 ];
 
 export const AboutCarousel = () => {
@@ -54,7 +68,7 @@ export const AboutCarousel = () => {
     if (!emblaApi) return;
     const interval = setInterval(() => {
       emblaApi.scrollNext();
-    }, 4000); // Change image every 4 seconds
+    }, 2000); // Carregamento das imagens a cada 2 segundos -> 2000 milesegundos
 
     return () => clearInterval(interval);
   }, [emblaApi]);
