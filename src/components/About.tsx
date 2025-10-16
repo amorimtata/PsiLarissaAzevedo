@@ -25,22 +25,19 @@ const About = () => {
 
               <div className="space-y-5 text-foreground/80 leading-relaxed text-left">
                 <p className="text-base md:text-lg">
-                  Sou <strong>Larissa Azevedo</strong>, psicóloga formada pelo 
-                  <strong> Centro Universitário São Lucas</strong>, com especialização em andamento em 
-                  <strong> Psicodiagnóstico e Avaliação Psicológica</strong> pela 
-                  <strong> Faculdade Famart</strong>.
+                  Sou a <strong>Larissa Azevedo</strong>, psicóloga que acredita no poder da escuta, do acolhimento e das pequenas transformações que surgem quando alguém se sente verdadeiramente compreendido. Tenho um jeito leve, empático e espontâneo — gosto de conversar com pessoas de todas as idades, transformar silêncio em conexão e mostrar que cuidar da mente pode ser um processo cheio de leveza e afeto.
                 </p>
                 <p className="text-base md:text-lg">
-                  Sou apaixonada por compreender pessoas e ajudá-las 
-                  a construir uma vida mais leve e equilibrada.
+                  Com mais de 800 horas de atendimentos, tive o privilégio de acompanhar histórias que se reinventaram, dores que viraram força e pessoas que redescobriram o próprio brilho. Cada encontro me lembra que a mudança começa quando olhamos para dentro com gentileza.
                 </p>
                 <p className="text-base md:text-lg">
-                  Atuo com base na <strong>Terapia Cognitivo-Comportamental (TCC)</strong>, uma abordagem que busca entender 
-                  como pensamentos, emoções e comportamentos se relacionam, promovendo mudanças reais e sustentáveis no dia a dia.
+                  Trabalho com a <strong>Terapia Cognitivo-Comportamental (TCC)</strong>, uma abordagem prática e transformadora que mostra como nossos pensamentos influenciam o que sentimos e fazemos — ajudando a viver de forma mais consciente e saudável.
                 </p>
                 <p className="text-base md:text-lg">
-                  Acredito que a psicologia deve unir técnica e sensibilidade, aplicando métodos científicos sem perder a conexão 
-                  genuína com quem está do outro lado.
+                  Sou apaixonada por animais (mãe de nove cachorros 🐾) e aprendo com eles todos os dias sobre amor e presença. Levo essa mesma energia para o consultório: escutar com o coração, acolher com leveza e ajudar cada pessoa a construir uma vida mais autêntica e possível.
+                </p>
+                <p className="text-base md:text-lg">
+                  Porque, no fim, a terapia é isso — um encontro entre pessoas, com cuidado, verdade e esperança. 🌻
                 </p>
               </div>
             </div>

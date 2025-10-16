@@ -24,17 +24,19 @@ export const Proposito = () => {
 
           {/* Aumentado o espaçamento entre parágrafos para space-y-5 */}
           <div className="space-y-5 text-foreground/80 leading-relaxed">
-            
-            {/* Adicionada fonte responsiva (text-base no mobile, text-lg no desktop) */}
             <p className="text-base md:text-lg">
-              Meu propósito é oferecer um espaço acolhedor, onde você possa se expressar livremente, compreender suas emoções 
-              e desenvolver ferramentas para lidar melhor com os desafios da vida.
+                🌿 Um espaço para se reencontrar
             </p>
             <p className="text-base md:text-lg">
-              Cada pessoa tem seu próprio tempo e ritmo — e é com empatia, respeito e compromisso que caminho junto com meus 
-              pacientes nessa jornada de autoconhecimento e transformação.
+                Meu propósito é acolher histórias e ajudar pessoas a se reconectarem com quem realmente são.
             </p>
-          </div>
+            <p className="text-base md:text-lg">
+                Acredito que a terapia é mais do que um processo — é um encontro entre pessoas, um espaço onde a escuta, o afeto e o silêncio ganham sentido.
+            </p>
+            <p className="text-base md:text-lg">
+                O autoconhecimento não é sobre se tornar alguém novo, mas sobre voltar a ser quem sempre fomos — com mais leveza, amor e verdade.
+            </p>
+            </div>
         </div>
       </div>
     </section>

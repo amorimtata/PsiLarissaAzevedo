@@ -39,8 +39,8 @@ const Hero = () => {
           className="text-lg md:text-xl text-white max-w-2xl mx-auto mb-10 leading-relaxed"
           style={{ textShadow: '0 2px 6px rgba(0, 0, 0, 0.7)' }}
         >
-          Um espaço acolhedor para cuidar da sua saúde mental e emocional. 
-          Atendimento humanizado com empatia, escuta e profissionalismo.
+          A vida é feita de encontros — e a terapia é um dos mais bonitos.
+          Com leveza, empatia e um toque de humor, caminho ao lado de quem busca se reencontrar com a própria essência. 🌿
         </p>
         
         <Button 
@@ -49,7 +49,7 @@ const Hero = () => {
           onClick={() => window.open(whatsappUrl, '_blank')}
         >
           <MessageCircle className="mr-2 h-5 w-5 group-hover:scale-110 transition-smooth" />
-          Falar no WhatsApp
+          <span>Quero começar minha jornada!</span>
         </Button>
       </div>
     </section>

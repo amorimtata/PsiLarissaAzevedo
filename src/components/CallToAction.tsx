@@ -21,8 +21,8 @@ const CallToAction = () => {
             Pronta Para Te Atender!
           </h2>
           <p className="text-lg md:text-xl text-foreground/80 mb-10 leading-relaxed">
-            Dê o primeiro passo em direção ao seu bem-estar emocional. 
-            Entre em contato e vamos juntos construir um caminho de cuidado e transformação.
+            Juntas(os), podemos transformar inquietações em aprendizado, dúvidas em clareza e o peso dos dias em novos caminhos possíveis.
+            Porque a mudança começa no momento em que você se permite dar o primeiro passo.
           </p>
           
           <Button 
@@ -31,7 +31,7 @@ const CallToAction = () => {
             onClick={() => window.open(whatsappUrl, '_blank')}
           >
             <MessageCircle className="mr-2 h-5 w-5 group-hover:scale-110 transition-smooth" />
-            Agendar Consulta
+            🌼 Vamos começar essa jornada?
           </Button>
         </div>
       </div>
