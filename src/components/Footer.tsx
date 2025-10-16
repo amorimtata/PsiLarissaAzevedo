@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-serif font-bold mb-4">
-              Larissa Azevedo Pedraça
+              Larissa Azevedo Silva
             </h3>
             <p className="text-primary-foreground/80 leading-relaxed">
               Psicóloga - CRP 24/05599
@@ -32,7 +32,7 @@ const Footer = () => {
                 className="flex items-center gap-2 text-primary-foreground/80 hover:text-primary-foreground transition-smooth"
               >
                 <Mail className="h-4 w-4" />
-                contato@larissaapedraca.com.br
+                larissazevveddop@gmail.com
               </a>
             </div>
           </div>
