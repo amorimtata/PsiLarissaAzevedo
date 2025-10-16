@@ -7,12 +7,13 @@ import pho4 from "@/assets/pho4.jpeg";
 import pho5 from "@/assets/pho5.jpeg";
 import lariPhoto from "@/assets/lari-photo.jpeg";  
 
-
-
 // Array carrossel images
-
 // Add more images here as needed
 const images = [
+  {
+    src: pho5,
+    alt: "Imagem 5",
+  },
   {
     src: pho2,
     alt: "Imagem 2",
@@ -24,10 +25,6 @@ const images = [
   {
     src: pho4,
     alt: "Imagem 4",
-  },
-  {
-    src: pho5,
-    alt: "Imagem 5",
   },
   {
     src: lariPhoto,
@@ -73,7 +70,7 @@ export const AboutCarousel = () => {
     if (!emblaApi) return;
     const interval = setInterval(() => {
       emblaApi.scrollNext();
-    }, 5000); // Carregamento das imagens a cada 2 segundos -> 2000 milesegundos
+    }, 5000); // Carregamento das imagens a cada 5 segundos
 
     return () => clearInterval(interval);
   }, [emblaApi]);
@@ -85,14 +82,17 @@ export const AboutCarousel = () => {
         <div className="overflow-hidden" ref={emblaRef}>
           <div className="flex">
             {images.map((image, index) => (
+              // --- ALTERAÇÃO APLICADA AQUI ---
               <div
                 key={index}
-                className="flex-[0_0_100%] min-w-0"
+                // Adicionamos aspect-[3/4] para criar um "molde" com proporção fixa
+                className="flex-[0_0_100%] min-w-0 aspect-[3/4]"
               >
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="w-full h-auto object-cover"
+                  // Mudamos de h-auto para h-full para a imagem preencher o molde
+                  className="w-full h-full object-cover"
                 />
               </div>
             ))}
