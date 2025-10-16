@@ -25,7 +25,7 @@ const Hero = () => {
           className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 leading-tight"
           style={{ textShadow: '0 2px 8px rgba(0, 0, 0, 0.7)' }}
         >
-          Larissa Azevedo Pedraça
+          Larissa Azevedo Silva
         </h1>
         <div 
           className="flex items-center justify-center gap-x-4 mb-8 text-2xl text-gray-100 font-light"
