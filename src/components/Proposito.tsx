@@ -7,7 +7,9 @@ export const Proposito = () => {
     <section
       id="proposito"
       ref={ref as React.RefObject<HTMLDivElement>}
-      className={`section-padding bg-muted/30 transition-all duration-1000 ${
+      // --- ALTERAÇÃO APLICADA AQUI ---
+      // Trocamos bg-muted/30 por bg-primary/10 para um fundo marrom bem clarinho
+      className={`section-padding bg-primary/10 transition-all duration-1000 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >

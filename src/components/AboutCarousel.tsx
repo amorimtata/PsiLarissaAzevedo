@@ -15,6 +15,10 @@ const images = [
     alt: "Imagem 5",
   },
   {
+    src: lariPhoto,
+    alt: "Imagem 6",  
+  },
+  {
     src: pho2,
     alt: "Imagem 2",
   },
@@ -25,10 +29,6 @@ const images = [
   {
     src: pho4,
     alt: "Imagem 4",
-  },
-  {
-    src: lariPhoto,
-    alt: "Imagem 6",  
   }
 ];
 
