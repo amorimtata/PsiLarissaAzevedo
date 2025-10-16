@@ -18,9 +18,9 @@ export const Proposito = () => {
         <div className="max-w-3xl mx-auto text-left">
           
           {/* Aumentado o espaçamento inferior para mb-8 */}
-          <h3 className="text-3xl md:text-4xl font-serif font-semibold text-primary mb-8">
+          <h3 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8">
             Meu Propósito
-          </h3>
+        </h3>
 
           {/* Aumentado o espaçamento entre parágrafos para space-y-5 */}
           <div className="space-y-5 text-foreground/80 leading-relaxed">
