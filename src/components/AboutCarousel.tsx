@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import pho2 from "@/assets/pho2.jpeg";
+import pho3 from "@/assets/pho3.jpeg";  
 import pho4 from "@/assets/pho4.jpeg";
 import pho5 from "@/assets/pho5.jpeg";
 import lariPhoto from "@/assets/lari-photo.jpeg";  
@@ -15,6 +16,10 @@ const images = [
   {
     src: pho2,
     alt: "Imagem 2",
+  },
+  {
+    src: pho3,
+    alt: "Imagem 3",
   },
   {
     src: pho4,
