@@ -20,7 +20,7 @@ const About = () => {
               }`}
             >
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-8 text-left">
-                Quem Sou
+                Quem Sou?
               </h2>
 
               <div className="space-y-5 text-foreground/80 leading-relaxed text-left">
