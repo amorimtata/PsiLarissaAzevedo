@@ -49,7 +49,7 @@ const Hero = () => {
           onClick={() => window.open(whatsappUrl, '_blank')}
         >
           <MessageCircle className="mr-2 h-5 w-5 group-hover:scale-110 transition-smooth" />
-          <span>Quero começar minha jornada!</span>
+          <span>Quero começar minha jornada!🌻</span>
         </Button>
       </div>
     </section>
