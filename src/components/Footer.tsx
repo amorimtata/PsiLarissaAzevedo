@@ -72,7 +72,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/70">
-          <p>© {currentYear} Larissa Azevedo Pedraça. Todos os direitos reservados.</p>
+          <p>© {currentYear} Larissa Azevedo Silva. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
